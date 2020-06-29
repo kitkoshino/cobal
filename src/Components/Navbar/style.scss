@@ -1,0 +1,23 @@
+@import '../../_variables';
+
+header {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  img {
+    width: 100px;
+  }
+  nav {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        list-style: none;
+        color: white;
+      }
+    }
+  }
+}

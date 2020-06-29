@@ -1,0 +1,138 @@
+@import '../../variables';
+
+footer {
+  width: 100%;
+  background-color: $primary-color;
+  background-repeat: no-repeat;
+  background-image: url('./../../images/svg/circle-footer.svg'),
+    url('./../../images/svg/curve-1.svg');
+  background-size: 220%;
+  background-position: left 80%, 45% 93%;
+  display: flex;
+  flex-direction: column;
+  p {
+    color: white;
+    font-size: 0.8em;
+    margin: 4% 0 50px 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  @media screen and (min-width: $break-small) {
+    background-size: 100%;
+    background-position: left 15%, 45% 60%;
+  }
+
+  @media screen and (min-width: $break-medium) {
+    height: 550px;
+    background-size: 100%;
+    background-position: left 15%, 45% 70%;
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: $break-extra-large) {
+    height: 750px;
+    background-size: 95%, 100%;
+    background-position: 80% 15%, 45% 70%;
+    display: flex;
+    justify-content: center;
+    p {
+      font-size: 1em;
+    }
+  }
+
+  .footer-container {
+    padding: 10px 10px 50px 10px;
+    border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+    margin: 15px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (min-width: $break-small) {
+      flex-direction: row;
+      width: 80vw;
+      align-self: center;
+      padding: 30px 20px;
+    }
+
+    @media screen and (min-width: $break-medium) {
+      width: 60vw;
+      height: 40%;
+      align-items: center;
+    }
+
+    .footer-about {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      height: 140px;
+      justify-content: space-around;
+      max-width: 240px;
+      img {
+        width: 100px;
+      }
+      p {
+        text-align: left;
+        margin: 0;
+        padding: 5px;
+        font-size: 0.7em;
+        font-family: 'Poppins', sans-serif;
+      }
+      .social-media {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        width: 65%;
+      }
+
+      @media screen and (min-width: $break-large) {
+        height: 200px;
+        max-width: 315px;
+        img {
+          width: 150px;
+        }
+        p {
+          font-size: 0.9em;
+        }
+        .social-media {
+          font-size: 1.5em;
+        }
+      }
+    }
+    .footer-items {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 20px;
+      ul {
+        color: white;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        li {
+          list-style: none;
+          line-height: 2em;
+          font-size: 0.7em;
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      @media screen and (min-width: $break-small) {
+        margin: 0;
+      }
+
+      @media screen and (min-width: $break-large) {
+        h4 {
+          font-size: 1em;
+        }
+        ul {
+          li {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+}

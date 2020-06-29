@@ -1,0 +1,14 @@
+{
+  "teams": [
+    {
+      "name": "Cristiane Koshino",
+      "birthdate": "1989-12-05",
+      "address": "Rua Salvador Allende, 32 - Sacavém",
+      "status": "active",
+      "position": "developer",
+      "created": "2020-06-23",
+      "updated": "2020-06-24",
+      "id": 1
+    }
+  ]
+}

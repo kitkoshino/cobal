@@ -1,0 +1,47 @@
+@import '../../variables';
+
+.employees-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./../../images/svg/curve.svg'),
+    url('./../../images/svg/el-1.svg'), url('./../../images/svg/el-1.svg');
+  background-size: 200%, 8%, 8%;
+  background-position: center center, 80vw 50px, 10vw 30px;
+  background-repeat: no-repeat;
+  margin-bottom: 200px;
+
+  h2 {
+    color: $primary-color;
+  }
+
+  .employees-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $break-medium) {
+    background-size: 80%, 5%, 5%;
+    background-position: 250px -700px, 85vw 170px, 10vw 80px;
+    height: 140vh;
+    margin: 0;
+    h2 {
+      margin: 10px 0 90px 0;
+    }
+    .employees-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 60vw;
+      justify-items: center;
+      grid-gap: 30px;
+    }
+  }
+
+  @media screen and (min-width: $break-extra-large){
+    background-size: 75%, 5%, 5%;
+    background-position: 450px -900px, 85vw 170px, 10vw 80px;
+  }
+}

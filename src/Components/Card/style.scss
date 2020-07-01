@@ -1,0 +1,58 @@
+@import '../../variables';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0 0 20px 0;
+  width: 90%;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.15);
+  p {
+    color: $text-lighter-color;
+    line-height: 1.5;
+  }
+
+  .card-basic-data {
+    display: flex;
+    border-bottom: 1px solid $primary-color;
+    padding: 20px 0 15px 20px;
+    .card-picture {
+      width: 60px;
+      height: 60px;
+      border-radius: 60px;
+      object-fit: cover;
+    }
+    .card-name {
+      margin-left: 15px;
+      width: 60%;
+    }
+    svg {
+      color: $text-lighter-color;
+      margin-right: 7px;
+    }
+    .card-buttons {
+      @media screen and (min-width: $break-small) {
+        position: relative;
+        left: 15%;
+      }
+      @media screen and (min-width: $break-medium) {
+        left: 5%;
+      }
+      @media screen and (min-width: $break-extra-large) {
+        left: 10%;
+      }
+    }
+  }
+
+  .card-all-data {
+    margin: 15px 0 15px 20px;
+
+  }
+  
+  @media screen and (min-width: $break-medium) {
+    width: 100%;
+    margin: 0;
+  }
+}

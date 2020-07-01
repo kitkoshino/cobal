@@ -3,13 +3,16 @@ import './App.scss';
 import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
 import Footer from './Components/Footer';
+import Employees from './Pages/Employees';
+
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <main>
-        <Home />
+        {/* <Home /> */}
+        <Employees />
       </main>
       <Footer />
     </div>

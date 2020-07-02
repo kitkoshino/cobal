@@ -1,2 +1,98 @@
 @import '../../../variables';
 
+.employee-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../../images/svg/curve.svg'),
+    url('../../../images/svg/el-1.svg'), url('../../../images/svg/el-1.svg');
+  background-size: 150%, 8%, 8%;
+  background-position: center center, 80vw 50px, 10vw 30px;
+  background-repeat: no-repeat;
+  height: 110vh;
+  h2 {
+    color: $primary-color;
+    margin: 10px 0 90px 0;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+
+    .form-input {
+      width: 100%;
+      margin-bottom: 20px;
+      height: 40px;
+      border: 1px solid rgba($color: $text-lighter-color, $alpha: 0.3);
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      label {
+        color: $primary-color;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.8em;
+        padding: 0 10px;
+      }
+      input {
+        outline: none;
+        border: black;
+        display: block;
+        line-height: 2em;
+        width: 70%;
+      }
+    }
+    .form-dates {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+  
+      @media screen and (min-width: $break-small) {
+        flex-direction: row;
+        :first-child {
+          margin-right: 20px;
+        }
+      }
+    }
+
+    @media screen and (min-width: $break-medium) {
+      width: 60%;
+    }
+  }
+  button {
+    align-self: center;
+    background-color: $primary-color;
+    color: white;
+    box-shadow: 0px 14px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-weight: 100;
+  }
+
+  @media screen and (min-width: $break-small) {
+    height: 80vh;
+    background-size: 100%, 8%, 8%;
+    background-position: -10px -450px, 80vw 50px, 10vw 30px;
+  }
+  
+  @media screen and (min-width: $break-medium) {
+    height: 100vh;
+    background-size: 100%, 8%, 8%;
+    background-position: 50px -600px, 80vw 50px, 10vw 30px;
+  }
+
+  @media screen and (min-width: $break-large) {
+    height: 100vh;
+    background-size: 100%, 8%, 8%;
+    background-position: 220px -900px, 80vw 50px, 10vw 30px;
+  }
+
+  @media screen and (min-width: $break-extra-large) {
+    height: 95vh;
+    background-size: 80%, 8%, 8%;
+    background-position: 450px -900px, 80vw 50px, 10vw 30px;
+  }
+  
+}

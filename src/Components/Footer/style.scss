@@ -10,6 +10,21 @@ footer {
   background-position: left 80%, 45% 93%;
   display: flex;
   flex-direction: column;
+  &.not-home-style {
+    background-image: url('./../../images/svg/curve-1.svg');
+    background-size: 150%;
+    background-position: 95% 95%;
+    @media screen and (min-width: $break-small) {
+      background-size: 100%;
+      background-position: 95% 80%;
+    }
+
+    @media screen and (min-width: $break-large) {
+      background-size: 100%;
+      background-position: 20% 60%;
+    }
+
+  }
   p {
     color: white;
     font-size: 0.8em;

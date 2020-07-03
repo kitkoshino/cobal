@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Employee from '../../Pages/Employees/Employee';
 import './style.scss';
 import { MdEdit, MdClear } from 'react-icons/md';
 
-function Card() {
+function Card(props) {
+  const employeeId = props.employee.id;
+
+  useEffect(() => {
+    console.log('props card',props);
+  })
+
   return (
     <div className="card">
       <div className="card-basic-data">
@@ -12,21 +19,21 @@ function Card() {
           alt=""
         />
         <div className="card-name">
-          <h5>Bessie Berry</h5>
-          <p>Employee ID:</p>
+          <h5>{props.employee.name}</h5>
+          <p>Employee ID: <span>{props.employee.id}</span></p>
         </div>
         <div className="card-buttons">
           <MdEdit />
-          <MdClear />
+          <MdClear onClick={() => props.remove(props.employee.id)}/>
         </div>
       </div>
       <div className="card-all-data">
-        <p>Birthdate:</p>
-        <p>Address:</p>
-        <p>Status:</p>
-        <p>Position:</p>
-        <p>Created:</p>
-        <p>Updated:</p>
+        <p>Birthdate: <span>{props.employee.birthdate}</span></p>
+        <p>Address: <span>{props.employee.address}</span></p>
+        <p>Status: <span>{props.employee.status}</span></p>
+        <p>Position: <span>{props.employee.position}</span></p>
+        <p>Created: <span>{props.employee.created}</span></p>
+        <p>Updated: <span>{props.employee.updated}</span></p>
       </div>
     </div>
   );

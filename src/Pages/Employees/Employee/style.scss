@@ -3,8 +3,9 @@
 .employee-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding: 60px 0 100px 0;
+
   background-image: url('../../../images/svg/curve.svg'),
     url('../../../images/svg/el-1.svg'), url('../../../images/svg/el-1.svg');
   background-size: 150%, 8%, 8%;
@@ -60,6 +61,7 @@
 
     @media screen and (min-width: $break-medium) {
       width: 60%;
+      
     }
   }
   button {
@@ -79,20 +81,20 @@
   
   @media screen and (min-width: $break-medium) {
     height: 100vh;
-    background-size: 100%, 8%, 8%;
-    background-position: 50px -600px, 80vw 50px, 10vw 30px;
+    background-size: 80%, 5%, 5%;
+    background-position: 230px -500px, 80vw 100px, 12vw 30px;
   }
 
   @media screen and (min-width: $break-large) {
     height: 100vh;
-    background-size: 100%, 8%, 8%;
-    background-position: 220px -900px, 80vw 50px, 10vw 30px;
+    background-size: 80%, 3%, 3%;
+    background-position: 290px -700px, 76vw 100px, 25vw 50px;
   }
 
   @media screen and (min-width: $break-extra-large) {
     height: 95vh;
-    background-size: 80%, 8%, 8%;
-    background-position: 450px -900px, 80vw 50px, 10vw 30px;
+    background-size: 75%, 3%, 3%;
+    background-position: 450px -900px, 76vw 100px, 25vw 50px;
   }
   
 }

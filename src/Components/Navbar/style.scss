@@ -7,6 +7,17 @@ header {
   position: absolute;
   width: 100%;
   padding: 10px 0 10px 0;
+  align-items: center;
+  &.not-home-style {
+    position: static;
+    background-color: $primary-color;
+    button {
+      color: $primary-color;
+      height: 30px;
+      width: 130px;
+      padding: 0;
+    }
+  }
   img {
     width: 100px;
   }
@@ -14,10 +25,22 @@ header {
     ul {
       display: flex;
       justify-content: space-around;
+      align-items: center;
+
+      @media screen and (min-width: $break-large) {
+        width: 400px;
+      }
+      a {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+      }
       li {
         list-style: none;
         color: white;
+        font-size: 0.9em;
       }
     }
+    
   }
 }

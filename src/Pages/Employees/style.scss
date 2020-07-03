@@ -7,13 +7,13 @@
   justify-content: center;
   background-image: url('./../../images/svg/curve.svg'),
     url('./../../images/svg/el-1.svg'), url('./../../images/svg/el-1.svg');
-  background-size: 200%, 8%, 8%;
-  background-position: center center, 80vw 50px, 10vw 30px;
+  background-size: 150%, 8%, 8%;
+  background-position: 30% 60%, 80vw 75px, 10vw 50px;
   background-repeat: no-repeat;
-  margin-bottom: 200px;
-
+  padding: 60px 0 100px 0;
   h2 {
     color: $primary-color;
+    margin: 10px 0 90px 0;
   }
 
   .employees-card {
@@ -25,23 +25,31 @@
 
   @media screen and (min-width: $break-medium) {
     background-size: 80%, 5%, 5%;
-    background-position: 250px -700px, 85vw 170px, 10vw 80px;
-    height: 140vh;
+    background-position: 230px -500px, 80vw 100px, 12vw 30px;
+    height: auto;
     margin: 0;
-    h2 {
-      margin: 10px 0 90px 0;
-    }
+    
     .employees-card {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      width: 60vw;
+      width: 80vw;
       justify-items: center;
       grid-gap: 30px;
     }
   }
 
+  @media screen and (min-width: $break-large){
+    background-size: 80%, 3%, 3%;
+    background-position: 290px -700px, 76vw 100px, 25vw 50px;
+    height: auto;
+    .employees-card {
+      width: 60vw;
+
+    }
+  }
+
   @media screen and (min-width: $break-extra-large){
-    background-size: 75%, 5%, 5%;
-    background-position: 450px -900px, 85vw 170px, 10vw 80px;
+    background-size: 75%, 3%, 3%;
+    background-position: 450px -900px, 76vw 100px, 25vw 50px;
   }
 }

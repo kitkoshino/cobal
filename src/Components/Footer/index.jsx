@@ -7,10 +7,11 @@ import {
   FaLinkedinIn
 } from 'react-icons/fa';
 import './style.scss';
+import { useLocation } from 'react-router-dom';
 
 function Footer() {
   return (
-    <footer>
+    <footer className={useLocation().pathname !== '/' && 'not-home-style'}>
       <section className="footer-container">
         <div className="footer-about">
           <img src={logo} alt="logo" />

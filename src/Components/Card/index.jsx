@@ -1,14 +1,9 @@
-import React, { useEffect } from 'react';
-import Employee from '../../Pages/Employees/Employee';
+import React from 'react';
+import { MdClear, MdEdit } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 import './style.scss';
-import { MdEdit, MdClear } from 'react-icons/md';
 
 function Card(props) {
-  const employeeId = props.employee.id;
-
-  useEffect(() => {
-    console.log('props card',props);
-  })
 
   return (
     <div className="card">
@@ -20,20 +15,36 @@ function Card(props) {
         />
         <div className="card-name">
           <h5>{props.employee.name}</h5>
-          <p>Employee ID: <span>{props.employee.id}</span></p>
+          <p>
+            Employee ID: <span>{props.employee.id}</span>
+          </p>
         </div>
         <div className="card-buttons">
-          <MdEdit />
-          <MdClear onClick={() => props.remove(props.employee.id)}/>
+          <Link to={{pathname:`/employee/${props.employee.id}`}}>
+            <MdEdit />
+          </Link>
+          <MdClear onClick={() => props.remove(props.employee.id)} />
         </div>
       </div>
       <div className="card-all-data">
-        <p>Birthdate: <span>{props.employee.birthdate}</span></p>
-        <p>Address: <span>{props.employee.address}</span></p>
-        <p>Status: <span>{props.employee.status}</span></p>
-        <p>Position: <span>{props.employee.position}</span></p>
-        <p>Created: <span>{props.employee.created}</span></p>
-        <p>Updated: <span>{props.employee.updated}</span></p>
+        <p>
+          Birthdate: <span>{props.employee.birthdate}</span>
+        </p>
+        <p>
+          Address: <span>{props.employee.address}</span>
+        </p>
+        <p>
+          Status: <span>{props.employee.status}</span>
+        </p>
+        <p>
+          Position: <span>{props.employee.position}</span>
+        </p>
+        <p>
+          Created: <span>{props.employee.created.substr(0, 10)}</span>
+        </p>
+        <p>
+          Updated: <span>{props.employee.updated.substr(0, 10)}</span>
+        </p>
       </div>
     </div>
   );

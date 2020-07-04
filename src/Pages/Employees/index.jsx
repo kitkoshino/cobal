@@ -28,11 +28,6 @@ const Employees = () => {
       .catch((error) => console.log(error));
   }
 
-  function getEmployeeId(employees) {
-    const employeeId = [...employees].id;
-    console.log('funcao ID', employeeId);
-  }
-
   return (
     <section className="employees-container">
       <h2>Team</h2>

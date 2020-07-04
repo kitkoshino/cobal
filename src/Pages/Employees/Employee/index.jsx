@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-import { create } from '../../../services/teams';
+import React, { useState, useEffect } from 'react';
+import { create, getEmployee, edit } from '../../../services/teams';
 import { useHistory } from 'react-router-dom';
 import './style.scss';
 
-const Employee = () => {
+const Employee = (props) => {
   const [formValues, setFormValues] = useState({
+    id: '',
     name: '',
     birthdate: '',
     address: '',
@@ -23,13 +24,38 @@ const Employee = () => {
 
   function handleSubmit(event) {
     event.preventDefault();
-    create(formValues)
-      .then(() => history.push('/employees'))
-      .catch((error) => {
-        console.log(error)
-        //TODO: MENSAGEM DE ERRO
-      });
+    if (props?.match?.params?.id) {
+      edit(formValues)
+        .then(() => history.push('/employees'))
+        .catch((error) => console.log(error));
+    } else {
+      create(formValues)
+        .then(() => history.push('/employees'))
+        .catch((error) => {
+          console.log(error);
+          //TODO: MENSAGEM DE ERRO
+        });
+    }
   }
+
+  useEffect(() => {
+    if (props?.match?.params?.id) {
+      getEmployee(props.match.params.id).then((res) => {
+        setFormValues({...res});
+      });
+    } else {
+      setFormValues({
+        id: '',
+        name: '',
+        birthdate: '',
+        address: '',
+        status: '',
+        position: '',
+        created: '',
+        updated: ''
+      });
+    }
+  }, [props]);
 
   return (
     <section className="employee-container">
@@ -37,7 +63,7 @@ const Employee = () => {
       <form onSubmit={handleSubmit}>
         <div className="form-input">
           <label htmlFor="id">Employee ID:</label>
-          <input type="text" name="id" />
+          <input type="text" name="id" value={formValues.id} disabled />
         </div>
         <div className="form-input">
           <label htmlFor="name">Name:</label>
@@ -51,7 +77,7 @@ const Employee = () => {
         <div className="form-input">
           <label htmlFor="birthdate">Birthdate:</label>
           <input
-            type="text"
+            type="date"
             name="birthdate"
             onChange={handleInputChange}
             value={formValues.birthdate}
@@ -87,11 +113,21 @@ const Employee = () => {
         <div className="form-dates">
           <div className="form-input">
             <label htmlFor="created">Created:</label>
-            <input type="text" name="created" />
+            <input
+              type="date"
+              name="created"
+              value={formValues.created.substr(0, 10)}
+              disabled
+            />
           </div>
           <div className="form-input">
             <label htmlFor="updated">Updated:</label>
-            <input type="text" name="updated" />
+            <input
+              type="date"
+              name="updated"
+              value={formValues.updated.substr(0, 10)}
+              disabled
+            />
           </div>
         </div>
         <button type="submit">Submit</button>

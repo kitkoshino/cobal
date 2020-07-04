@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import './style.scss';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../../images/svg/logo.svg';
-import { useLocation, Link } from 'react-router-dom';
+import './style.scss';
 
 function Navbar() {
   return (
-    <header className={useLocation().pathname !== '/' && 'not-home-style'}>
+    <header className={useLocation().pathname !== '/' ? 'not-home-style': ''}>
       <Link to="/">
         <img src={logo} alt="logo" />
       </Link>

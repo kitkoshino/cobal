@@ -21,7 +21,6 @@
     flex-direction: column;
     align-items: flex-start;
     width: 90%;
-
     .form-input {
       width: 100%;
       margin-bottom: 20px;
@@ -43,6 +42,15 @@
         display: block;
         line-height: 2em;
         width: 70%;
+        font-family:'Poppins', sans-serif;
+        font-size: 0.8em;
+        &[type=date]{
+          width: 150px;
+        }
+        &:disabled {
+          background-color: transparent;
+          color: $text-lighter-color;
+        }
       }
     }
     .form-dates {

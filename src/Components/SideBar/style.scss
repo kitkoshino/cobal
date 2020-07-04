@@ -1,0 +1,75 @@
+@import '../../variables';
+
+.side-bar-container {
+  .toggle-menu {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    svg {
+      color: white;
+      font-size: 3em;
+    }
+  }
+  .side-bar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    background-color: rgba(255,255,255, 1);
+    transition: 0.8s ease;
+    z-index: 100;
+    position: fixed;
+    justify-content: center;
+    .content {
+      padding: 50px 20px;
+      text-align: left;
+      font-size: 2em;
+      display: flex;
+      flex-direction: column;
+      a {
+        text-decoration: none;
+        line-height: 2;
+      }
+      button {
+        height: 40px;
+        padding: 0;
+        color: $primary-color;
+
+      }
+    }
+  }
+  .not-home-style {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    background-color: $primary-color;
+    transition: 0.8s ease;
+    z-index: 100;
+    position: fixed;
+    justify-content: center;
+    .content {
+      padding: 50px 20px;
+      text-align: left;
+      font-size: 2em;
+      display: flex;
+      flex-direction: column;
+      a {
+        text-decoration: none;
+        line-height: 2.5;
+        color: white;
+      }
+      button {
+        height: 40px;
+        width: 80%;
+        padding: 0;
+        color: $primary-color;
+
+      }
+    }
+  }
+
+}

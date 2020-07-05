@@ -1,5 +1,5 @@
 # Cobal
-Application deceloped with React, Javascript, Sass. And Json Server for fake api
+Application developed with React, Javascript, Sass and Json Server for fake api
 
 ## Getting Started
 

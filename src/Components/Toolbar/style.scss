@@ -18,6 +18,7 @@ header {
     width: 120px;
     position: relative;
     right: 130px;
+    font-family: $font-family-secundary;
     @media screen and (min-width: $break-small) {
       right: 80px;
     }

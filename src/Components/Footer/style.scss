@@ -85,7 +85,8 @@ footer {
       justify-content: space-around;
       max-width: 240px;
       img {
-        width: 100px;
+        width: 100px; 
+        font-family: $font-family-secundary;
       }
       p {
         text-align: left;

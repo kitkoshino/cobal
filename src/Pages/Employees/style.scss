@@ -8,12 +8,13 @@
   background-image: url('./../../images/svg/curve.svg'),
     url('./../../images/svg/el-1.svg'), url('./../../images/svg/el-1.svg');
   background-size: 150%, 8%, 8%;
-  background-position: 30% 60%, 80vw 75px, 10vw 50px;
+  background-position: 30% 80%, 80vw 75px, 10vw 50px;
   background-repeat: no-repeat;
   padding: 60px 0 100px 0;
   h2 {
     color: $primary-color;
-    margin: 10px 0 90px 0;
+    margin: 50px 0 150px 0;
+    font-weight: 600;
   }
 
   .employees-card {
@@ -39,8 +40,8 @@
   }
 
   @media screen and (min-width: $break-large){
-    background-size: 80%, 3%, 3%;
-    background-position: 290px -700px, 76vw 100px, 25vw 50px;
+    background-size: 75%, 3%, 3%;
+    background-position: 290px -700px, 76vw 150px, 25vw 90px;
     height: auto;
     .employees-card {
       width: 60vw;
@@ -50,6 +51,6 @@
 
   @media screen and (min-width: $break-extra-large){
     background-size: 75%, 3%, 3%;
-    background-position: 450px -900px, 76vw 100px, 25vw 50px;
+    background-position: 450px -900px, 76vw 100px, 23vw 95px;
   }
 }

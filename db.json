@@ -19,26 +19,6 @@
       "created": "2020-07-03T16:09:51.670Z",
       "updated": "2020-07-03T16:09:51.670Z",
       "id": 2
-    },
-    {
-      "id": 3,
-      "name": "teste",
-      "birthdate": "",
-      "address": "teste",
-      "status": "teste",
-      "position": "testeee",
-      "created": "2020-07-03T16:36:43.413Z",
-      "updated": "2020-07-03T16:37:02.157Z"
-    },
-    {
-      "id": 4,
-      "name": "Teste1",
-      "birthdate": "1990-12-14",
-      "address": "Rua A",
-      "status": "ativo",
-      "position": "developer",
-      "created": "2020-07-03T17:03:20.125Z",
-      "updated": "2020-07-03T17:06:51.001Z"
     }
   ]
 }

@@ -1,46 +1,31 @@
 @import '../../_variables';
 
-header {
-  background-color: transparent;
+.navbar-container {
+  min-height: 73.6px;
   display: flex;
-  justify-content: space-around;
-  position: absolute;
-  width: 100%;
-  padding: 10px 0 10px 0;
   align-items: center;
-  &.not-home-style {
-    position: static;
-    background-color: $primary-color;
-    button {
-      color: $primary-color;
-      height: 30px;
-      width: 130px;
-      padding: 0;
-    }
-  }
-  img {
-    width: 100px;
-  }
-  nav {
-    ul {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+  position: absolute;
+  right: 100px;
 
-      @media screen and (min-width: $break-large) {
-        width: 400px;
+  ul {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    a {
+      text-decoration: none;
+      :hover {
+        color: black;
       }
-      a {
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
-      }
-      li {
-        list-style: none;
-        color: white;
-        font-size: 0.9em;
+      button {
+        color: $primary-color;
+        padding: 10px;
       }
     }
-    
+    li {
+      list-style: none;
+      color: white;
+      font-size: 0.9em;
+      margin-right: 50px;
+    }
   }
 }

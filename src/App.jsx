@@ -14,13 +14,15 @@ import {
 } from 'react-router-dom';
 import Media from 'react-media';
 import SideBar from './Components/SideBar';
+import Toolbar from './Components/Toolbar';
 
 function App() {
 
   return (
     <div className="App">
       <BrowserRouter>
-      <Media queries={{
+      <Toolbar />
+      {/* <Media queries={{
         medium: '(max-width: 1024px)'
       }}>
         {matches => (
@@ -28,7 +30,7 @@ function App() {
             <SideBar width={300} height={'100%'} />
           ) : (<Navbar />)
         )}
-      </Media>
+      </Media> */}
         {/* <Navbar /> */}
         {/* <SideBar width={300} height={'100%'}>
           <Link to="/">

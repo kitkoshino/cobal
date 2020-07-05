@@ -1,18 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { MdMenu, MdClear } from 'react-icons/md';
-import './style.scss';
+import React, { useState } from 'react';
+import { MdClear, MdMenu } from 'react-icons/md';
 import { Link, useLocation } from 'react-router-dom';
+import './style.scss';
 
 const SideBar = ({ width, height }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [xPosition, setXPosition] = useState(-300);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <div className="side-bar-container">
+    <nav className="side-bar-container">
       <button onClick={() => toggleMenu()} className="toggle-menu">
         {isOpen ? <MdClear /> : <MdMenu />}
       </button>
@@ -21,7 +20,7 @@ const SideBar = ({ width, height }) => {
           useLocation().pathname !== '/' && 'not-home-style'
         } ${isOpen ? 'open' : 'close'}`}
       >
-        <nav className="content">
+        <div className="content">
           <Link to="/" onClick={toggleMenu}>
             <p>Home</p>
           </Link>
@@ -36,9 +35,9 @@ const SideBar = ({ width, height }) => {
               <button> New Employee </button>
             </Link>
           )}
-        </nav>
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

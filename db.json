@@ -5,9 +5,9 @@
       "birthdate": "1989-12-05",
       "address": "Rua Salvador Allende, 32 - Sacavém",
       "status": "active",
-      "position": "developer",
+      "position": "junior developer",
       "created": "2020-07-03T16:09:51.670Z",
-      "updated": "",
+      "updated": "2020-07-05T12:39:32.918Z",
       "id": 1
     },
     {
@@ -15,10 +15,50 @@
       "birthdate": "1990-12-14",
       "address": "Rua Salvador Allende, 32 - Sacavém",
       "status": "active",
-      "position": "teste",
+      "position": "developer",
       "created": "2020-07-03T16:09:51.670Z",
-      "updated": "2020-07-03T16:09:51.670Z",
+      "updated": "2020-07-05T12:39:16.603Z",
       "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Bessie Berry",
+      "birthdate": "1990-01-01",
+      "address": "someStreet st, 1",
+      "status": "active",
+      "position": "developer",
+      "created": "2020-07-05T12:25:26.946Z",
+      "updated": ""
+    },
+    {
+      "id": 4,
+      "name": "Nick Herasimenka",
+      "birthdate": "1989-01-01",
+      "address": "SomeOtherStreet st, 2",
+      "status": "active",
+      "position": "designer",
+      "created": "2020-07-05T12:40:21.478Z",
+      "updated": ""
+    },
+    {
+      "id": 5,
+      "name": "Andrey Prokopenko",
+      "birthdate": "1987-01-01",
+      "address": "someStreet, 2",
+      "status": "active",
+      "position": "sales",
+      "created": "2020-07-05T12:41:01.123Z",
+      "updated": ""
+    },
+    {
+      "id": 6,
+      "name": "Miro Kirov",
+      "birthdate": "1986-01-09",
+      "address": "someStreet, 3",
+      "status": "active",
+      "position": "designer",
+      "created": "2020-07-05T12:41:52.369Z",
+      "updated": ""
     }
   ]
 }

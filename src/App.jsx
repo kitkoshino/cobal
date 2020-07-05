@@ -52,6 +52,7 @@ function App() {
             <Route exact path="/employee">
               <Employee />
             </Route>
+            <Route exact path="/employee/:id" render={(props) => (<Employee {...props} />)} />
           </Switch>
         </main>
         <Footer />

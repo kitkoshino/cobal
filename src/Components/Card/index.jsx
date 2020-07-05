@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './style.scss';
 
 function Card(props) {
-
+ 
   return (
     <div className="card">
       <div className="card-basic-data">

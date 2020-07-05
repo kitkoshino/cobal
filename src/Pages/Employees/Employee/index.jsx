@@ -63,7 +63,7 @@ const Employee = (props) => {
       <form onSubmit={handleSubmit}>
         <div className="form-input">
           <label htmlFor="id">Employee ID:</label>
-          <input type="text" name="id" value={formValues.id} disabled />
+          <input type="text" name="id" value={formValues.id} placeholder="automatically filled" disabled />
         </div>
         <div className="form-input">
           <label htmlFor="name">Name:</label>

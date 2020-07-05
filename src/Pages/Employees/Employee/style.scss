@@ -7,8 +7,8 @@
   padding: 60px 0;
   background-image: url('../../../images/svg/curve.svg'),
     url('../../../images/svg/el-1.svg'), url('../../../images/svg/el-1.svg');
-  background-size: 150%, 8%, 8%;
-  background-position: center center, 80vw 50px, 10vw 30px;
+  background-size: 250%, 8%, 8%;
+  background-position: -157px -650px, 80vw 75px, 10vw 50px;
   background-repeat: no-repeat;
   h2 {
     color: $primary-color;
@@ -31,7 +31,7 @@
       background-color: white;
       label {
         color: $primary-color;
-        font-family: 'Poppins', sans-serif;
+        font-family: $font-family-secundary;
         font-size: 0.8em;
         padding: 0 10px;
       }
@@ -41,7 +41,7 @@
         display: block;
         line-height: 2em;
         width: 70%;
-        font-family:'Poppins', sans-serif;
+        font-family: $font-family-secundary;
         font-size: 0.8em;
         &[type=date]{
           width: 150px;
@@ -88,7 +88,7 @@
   
   @media screen and (min-width: $break-medium) {
     background-size: 80%, 5%, 5%;
-    background-position: 230px -500px, 80vw 100px, 12vw 30px;
+    background-position: 140px -500px, 80vw 100px, 12vw 30px;
   }
 
   @media screen and (min-width: $break-large) {
@@ -98,7 +98,7 @@
 
   @media screen and (min-width: $break-extra-large) {
     background-size: 75%, 3%, 3%;
-    background-position: 450px -900px, 76vw 100px, 25vw 50px;
+    background-position: 450px -900px, 76vw 135px, 23vw 95px;
   }
   
 }

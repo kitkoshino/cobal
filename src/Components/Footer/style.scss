@@ -29,7 +29,7 @@ footer {
     color: white;
     font-size: 0.8em;
     margin: 4% 0 50px 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-family-secundary;
   }
 
   @media screen and (min-width: $break-small) {
@@ -92,7 +92,7 @@ footer {
         margin: 0;
         padding: 5px;
         font-size: 0.7em;
-        font-family: 'Poppins', sans-serif;
+        font-family: $font-family-secundary;
       }
       .social-media {
         color: white;

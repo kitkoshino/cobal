@@ -32,6 +32,9 @@
       color: $text-lighter-color;
       margin-right: 7px;
       cursor: pointer;
+      :hover {
+        color: $primary-color;
+      }
     }
     .card-buttons {
       @media screen and (min-width: $break-small) {

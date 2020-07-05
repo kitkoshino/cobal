@@ -3,14 +3,16 @@
 .side-bar-container {
   .toggle-menu {
     background-color: transparent;
-    width: 30px;
-    height: 30px;
+    width: auto;
+    height: auto;
     position: absolute;
-    top: 0;
-    right: 70px;
+    top: 25px;
+    left: 85vw;
+    padding: 0;
     svg {
       color: white;
       font-size: 2.5em;
+      cursor: pointer;
     }
   }
 

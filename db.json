@@ -23,12 +23,12 @@
     {
       "id": 3,
       "name": "Bessie Berry",
-      "birthdate": "1990-01-01",
+      "birthdate": "1990-01-02",
       "address": "someStreet st, 1",
       "status": "active",
       "position": "developer",
       "created": "2020-07-05T12:25:26.946Z",
-      "updated": ""
+      "updated": "2020-07-05T18:39:36.462Z"
     },
     {
       "id": 4,

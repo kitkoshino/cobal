@@ -11,7 +11,7 @@ function Card(props) {
         <img
           className="card-picture"
           src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-          alt=""
+          alt="employee"
         />
         <div className="card-name">
           <h5>{props.employee.name}</h5>

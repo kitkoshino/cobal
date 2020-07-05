@@ -11,7 +11,7 @@ import { useLocation } from 'react-router-dom';
 
 function Footer() {
   return (
-    <footer className={useLocation().pathname !== '/' && 'not-home-style'}>
+    <footer className={`${useLocation().pathname !== '/' && 'not-home-style'}`}>
       <section className="footer-container">
         <div className="footer-about">
           <img src={logo} alt="logo" />

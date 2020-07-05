@@ -33,7 +33,6 @@ const Employee = (props) => {
         .then(() => history.push('/employees'))
         .catch((error) => {
           console.log(error);
-          //TODO: MENSAGEM DE ERRO
         });
     }
   }
@@ -79,6 +78,7 @@ const Employee = (props) => {
           <input
             type="date"
             name="birthdate"
+            id="input-birthdate"
             onChange={handleInputChange}
             value={formValues.birthdate}
           />
